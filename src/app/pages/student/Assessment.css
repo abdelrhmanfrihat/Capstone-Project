@@ -1,0 +1,9 @@
+.student-assessment-form input:-webkit-autofill,
+.student-assessment-form input:-webkit-autofill:hover,
+.student-assessment-form input:-webkit-autofill:focus,
+.student-assessment-form input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px var(--bg-main) inset;
+  -webkit-text-fill-color: var(--text-main);
+  caret-color: var(--text-main);
+  transition: background-color 99999s ease-out 0s;
+}

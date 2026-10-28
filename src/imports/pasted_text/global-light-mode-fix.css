@@ -1,0 +1,633 @@
+Apply a global Light Mode color and contrast fix across the entire InternMatch AI prototype.
+
+Important:
+Do NOT change Dark Mode at all.
+Dark Mode is already acceptable and must remain exactly the same.
+Only fix Light Mode colors, contrast, readability, and component states across all pages.
+
+Current issue:
+Light Mode has inconsistent colors across multiple screens. Some text is hard to read, some components look disabled when they are clickable, some dark-mode blocks appear inside light mode, and badges/cards/buttons are not consistent.
+
+Apply this globally to:
+- Portal selection screen
+- Authentication pages
+- Student Portal
+- Company Portal
+- Admin Portal
+- Dashboards
+- Opportunities
+- Applications
+- Invitations
+- Feedback
+- Profiles
+- AI Insights
+- Candidate Discovery
+- Pipeline
+- Interviews
+- Company Insights
+- Admin Verification
+- Admin Questions
+- Admin Skills
+- Admin Status Override
+- Admin Feedback Moderation
+- Modals
+- Drawers
+- Tables
+- Forms
+- Cards
+- Empty states
+- Success/error/warning states
+
+--------------------------------------------------
+GLOBAL LIGHT MODE PALETTE
+--------------------------------------------------
+
+Use this palette for Light Mode only:
+
+Main backgrounds:
+- App background: #F8FAFC
+- Page background: #F8FAFC
+- Card background: #FFFFFF
+- Secondary surface: #F1F5F9
+- Elevated surface: #FFFFFF
+
+Sidebar:
+- Sidebar background: #FFFFFF
+- Sidebar border: #E2E8F0
+
+Topbar:
+- Topbar background: #FFFFFF
+- Topbar border: #E2E8F0
+
+Text:
+- Primary text: #0F172A
+- Secondary text: #334155
+- Muted text: #64748B
+- Placeholder text: #94A3B8
+- Disabled text: #94A3B8
+- Text on blue buttons: #FFFFFF
+
+Borders:
+- Default border: #E2E8F0
+- Strong border: #CBD5E1
+- Focus border: #2563EB
+
+Brand blue:
+- Primary blue: #2563EB
+- Primary blue hover: #1D4ED8
+- Light blue background: #EFF6FF
+- Blue border: #BFDBFE
+- Blue text: #1D4ED8
+
+Success:
+- Green text: #047857
+- Green background: #ECFDF5
+- Green border: #A7F3D0
+
+Warning:
+- Amber text: #B45309
+- Amber background: #FFFBEB
+- Amber border: #FDE68A
+
+Danger:
+- Red text: #B91C1C
+- Red background: #FEF2F2
+- Red border: #FECACA
+
+Neutral:
+- Gray text: #334155
+- Gray background: #F1F5F9
+- Gray border: #CBD5E1
+
+Purple/info optional:
+- Purple text: #6D28D9
+- Purple background: #F5F3FF
+- Purple border: #DDD6FE
+
+--------------------------------------------------
+GLOBAL TEXT READABILITY RULES
+--------------------------------------------------
+
+Fix all Light Mode text globally.
+
+Rules:
+- Never use white text on white or light backgrounds.
+- Never use pale gray text for important content.
+- Never use dark-mode text colors inside light cards if they reduce readability.
+- Headings must use #0F172A.
+- Body text must use #334155 or #475569.
+- Metadata and helper text should use #64748B.
+- Placeholder text should use #94A3B8.
+- Links should use #2563EB or #1D4ED8.
+- Button text on blue buttons must be white.
+- Badge text must always be readable against its background.
+
+Fix all:
+- Page titles
+- Section titles
+- Card titles
+- Descriptions
+- Metadata
+- Sidebar labels
+- Table text
+- Form labels
+- Placeholder text
+- Modal text
+- Drawer text
+- Badge text
+- Chart labels
+- Empty state text
+
+--------------------------------------------------
+GLOBAL CARD FIXES
+--------------------------------------------------
+
+All Light Mode cards should use:
+
+Background:
+#FFFFFF
+
+Border:
+#E2E8F0
+
+Text:
+#0F172A / #334155
+
+Muted text:
+#64748B
+
+Shadow:
+Soft light shadow only
+
+Do not use dark navy or dark gray card backgrounds in Light Mode.
+
+This applies to:
+- Dashboard cards
+- Opportunity cards
+- Candidate cards
+- Feedback cards
+- Admin cards
+- Summary cards
+- Insight cards
+- Pipeline cards
+- Interview cards
+- Verification cards
+- Question cards
+- Skill cards
+- Status cards
+- Modals and drawers
+
+--------------------------------------------------
+GLOBAL AI / INSIGHT CARD FIX
+--------------------------------------------------
+
+All AI-related cards in Light Mode should use a readable light blue style.
+
+Examples:
+- AI Match Analysis
+- AI Growth Insight
+- AI Recommendation
+- Skill Gap Analysis
+- Match Explanation
+- Candidate AI Reason
+- Top AI Recommendation
+- Recalculate Matches
+- AI Suggestions
+
+Use:
+Background: #EFF6FF
+Border: #BFDBFE
+Title: #1D4ED8
+Body text: #334155
+Icon: #2563EB
+
+Do not use dark gray blocks for AI cards in Light Mode.
+
+--------------------------------------------------
+GLOBAL BUTTON FIXES
+--------------------------------------------------
+
+Primary buttons:
+- Background: #2563EB
+- Hover: #1D4ED8
+- Text: #FFFFFF
+- Border: #2563EB
+
+Secondary / outline buttons:
+- Background: #FFFFFF
+- Border: #CBD5E1
+- Text: #0F172A
+- Hover background: #F1F5F9
+- Hover border: #2563EB
+- Hover text: #1D4ED8
+
+Ghost buttons:
+- Background: transparent
+- Text: #334155
+- Hover background: #F1F5F9
+- Hover text: #1D4ED8
+
+Danger buttons:
+- Background: #DC2626
+- Hover: #B91C1C
+- Text: #FFFFFF
+
+Disabled buttons:
+- Background: #F1F5F9
+- Border: #E2E8F0
+- Text: #94A3B8
+
+Important:
+Only use disabled styling if the action is actually disabled.
+Do not make active buttons look faded or disabled.
+
+Fix globally:
+- Apply Now
+- Save Role
+- View Profile
+- Invite to Interview
+- View Details
+- Reschedule
+- Cancel
+- Add Skill
+- Add New Question
+- Submit
+- Save
+- Publish
+- Approve
+- Reject
+- Update Requirements
+- Recalculate Matches
+- Confirm actions
+
+--------------------------------------------------
+GLOBAL BADGE FIXES
+--------------------------------------------------
+
+Use consistent readable badge colors in Light Mode.
+
+Success badges:
+Examples:
+Active, Verified, Published, Available Now, Completed
+- Background: #ECFDF5
+- Border: #A7F3D0
+- Text: #047857
+
+Warning badges:
+Examples:
+Pending Review, Pending Response, Waiting, Matched
+- Background: #FFFBEB
+- Border: #FDE68A
+- Text: #B45309
+
+Danger badges:
+Examples:
+Rejected, Suspended, In Training, Missing Skill, Critical
+- Background: #FEF2F2
+- Border: #FECACA
+- Text: #B91C1C
+
+Info badges:
+Examples:
+Private, Public, AI Match, Interview, Draft info
+- Background: #EFF6FF
+- Border: #BFDBFE
+- Text: #1D4ED8
+
+Neutral badges:
+Examples:
+Draft, Hidden, Archived, Optional
+- Background: #F1F5F9
+- Border: #CBD5E1
+- Text: #334155
+
+Opportunity type badge:
+Internship / Training
+- Background: #EFF6FF
+- Border: #BFDBFE
+- Text: #1D4ED8
+
+--------------------------------------------------
+GLOBAL CHIP FIXES
+--------------------------------------------------
+
+Clickable filter chips:
+- Background: #FFFFFF
+- Border: #CBD5E1
+- Text: #334155
+
+Selected chips:
+- Background: #EFF6FF
+- Border: #2563EB
+- Text: #1D4ED8
+
+Strong match chips:
+- Background: #ECFDF5
+- Border: #A7F3D0
+- Text: #047857
+
+Missing skill chips:
+- Background: #FEF2F2
+- Border: #FECACA
+- Text: #B91C1C
+
+Disabled chips:
+- Background: #F1F5F9
+- Border: #E2E8F0
+- Text: #94A3B8
+
+Do not make normal filter chips look disabled.
+
+--------------------------------------------------
+GLOBAL SIDEBAR FIX
+--------------------------------------------------
+
+Light Mode sidebar:
+
+Background:
+#FFFFFF
+
+Border:
+#E2E8F0
+
+Logo text:
+#2563EB
+
+Section label:
+#64748B
+
+Normal nav item:
+- Background: transparent
+- Text: #0F172A
+- Icon: #334155
+
+Hover nav item:
+- Background: #F1F5F9
+- Text: #0F172A
+- Icon: #2563EB
+
+Active nav item:
+- Background: #EFF6FF
+- Text: #2563EB
+- Icon: #2563EB
+
+Do not use gray-purple active backgrounds.
+Do not use low-contrast blue text on muted backgrounds.
+
+--------------------------------------------------
+GLOBAL TOPBAR FIX
+--------------------------------------------------
+
+Light Mode topbar:
+
+Background:
+#FFFFFF
+
+Border:
+#E2E8F0
+
+Search input:
+- Background: #FFFFFF
+- Border: #CBD5E1
+- Text: #0F172A
+- Placeholder: #94A3B8
+- Focus border: #2563EB
+- Focus ring: #BFDBFE
+
+Icons:
+#334155
+
+Notification dot:
+#EF4444
+
+User name:
+#0F172A
+
+User role:
+#64748B
+
+--------------------------------------------------
+GLOBAL FORM FIXES
+--------------------------------------------------
+
+Light Mode forms:
+
+Labels:
+#334155
+
+Inputs:
+- Background: #FFFFFF
+- Border: #CBD5E1
+- Text: #0F172A
+- Placeholder: #94A3B8
+
+Focus:
+- Border: #2563EB
+- Ring: #BFDBFE
+
+Helper text:
+#64748B
+
+Error text:
+#B91C1C
+
+Success text:
+#047857
+
+Dropdowns:
+- Background: #FFFFFF
+- Text: #0F172A
+- Border: #CBD5E1
+
+Checkbox/radio:
+- Accent: #2563EB
+- Label text: #334155
+
+--------------------------------------------------
+GLOBAL TABLE FIXES
+--------------------------------------------------
+
+Light Mode tables:
+
+Table background:
+#FFFFFF
+
+Header background:
+#F1F5F9
+
+Header text:
+#334155
+
+Row text:
+#0F172A
+
+Secondary row text:
+#64748B
+
+Row border:
+#E2E8F0
+
+Row hover:
+#F8FAFC
+
+Action buttons:
+Use consistent secondary/primary button styles.
+
+--------------------------------------------------
+GLOBAL MODAL / DRAWER FIXES
+--------------------------------------------------
+
+Light Mode modals and drawers:
+
+Background:
+#FFFFFF
+
+Border:
+#E2E8F0
+
+Title:
+#0F172A
+
+Body text:
+#334155
+
+Muted text:
+#64748B
+
+Overlay:
+Use a subtle dark transparent overlay.
+
+Do not use dark-mode modal backgrounds in Light Mode.
+
+--------------------------------------------------
+GLOBAL MATCH SCORE FIXES
+--------------------------------------------------
+
+High match:
+90%+
+- Background: #ECFDF5
+- Border: #A7F3D0
+- Text: #047857
+
+Medium match:
+70%-89%
+- Background: #FFFBEB
+- Border: #FDE68A
+- Text: #B45309
+
+Low match:
+Below 70%
+- Background: #FEF2F2
+- Border: #FECACA
+- Text: #B91C1C
+
+Match Score label:
+#475569
+
+--------------------------------------------------
+GLOBAL STATUS-SPECIFIC FIXES
+--------------------------------------------------
+
+Applied:
+Info blue badge
+
+Shortlisted:
+Info blue/purple badge
+
+Interview:
+Blue badge
+
+Matched:
+Amber badge
+
+In Training:
+Red badge
+
+Available Now:
+Green badge
+
+Pending Review:
+Amber badge
+
+Published:
+Green badge
+
+Rejected:
+Red badge
+
+Hidden:
+Gray badge
+
+--------------------------------------------------
+SPECIFIC COMMON ISSUES TO FIX EVERYWHERE
+--------------------------------------------------
+
+Fix these globally:
+
+1. Dark gray AI boxes inside Light Mode
+Replace with light blue AI cards.
+
+2. White or pale text inside light cards
+Replace with dark readable text.
+
+3. Buttons looking disabled when they are clickable
+Use enabled button styles.
+
+4. Filter chips looking disabled
+Use normal clickable chip styles.
+
+5. Badges with poor contrast
+Use the global badge system.
+
+6. Sidebar active item not clean
+Use light blue active state.
+
+7. Topbar search and icon contrast
+Use readable dark text/icons.
+
+8. Tables looking washed out
+Use clear header background, borders, and text.
+
+9. Forms with invisible placeholder or labels
+Use proper form colors.
+
+10. Modals and drawers inheriting dark colors
+Use white surfaces and dark text.
+
+--------------------------------------------------
+DO NOT CHANGE DARK MODE
+--------------------------------------------------
+
+This is critical:
+
+Do not modify:
+- Dark mode backgrounds
+- Dark mode cards
+- Dark mode buttons
+- Dark mode text
+- Dark mode badges
+- Dark mode sidebar
+- Dark mode topbar
+- Dark mode modals
+- Dark mode components
+
+Only Light Mode should be updated.
+
+--------------------------------------------------
+FINAL RESULT
+--------------------------------------------------
+
+After this update, the entire Light Mode should feel:
+- Clean
+- Bright
+- Professional
+- Consistent
+- Readable
+- Accessible
+- Blue-branded
+- Not washed out
+- Not disabled-looking
+- Not mixed with dark-mode components
+
+Keep all layouts and functionality the same.
+Only fix global Light Mode colors, readability, states, and visual consistency.

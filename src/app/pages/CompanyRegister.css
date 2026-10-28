@@ -1,0 +1,28 @@
+@media (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
+  .company-form-to-left {
+    animation: company-form-left 250ms ease-out both;
+  }
+
+  .company-form-to-center {
+    animation: company-form-center 250ms ease-out both;
+  }
+
+  .company-preview-enter {
+    animation: company-preview-enter 250ms ease-out both;
+  }
+}
+
+@keyframes company-form-left {
+  from { opacity: 0.88; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes company-form-center {
+  from { opacity: 0.88; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes company-preview-enter {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}

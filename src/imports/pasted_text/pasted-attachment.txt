@@ -1,0 +1,298 @@
+Fix the Light Mode color system across the entire InternMatch AI prototype.
+
+Important:
+Do NOT change the Dark Mode design at all.
+Do NOT modify any dark mode colors, backgrounds, cards, text colors, borders, or buttons.
+Only update Light Mode.
+
+Current issue:
+In Light Mode, colors are inconsistent and some text is not visible or has low contrast.
+
+Goal:
+Create a clean, professional, accessible Light Mode that matches the same brand identity as Dark Mode but uses proper light backgrounds, readable text, and consistent blue accents.
+
+--------------------------------------------------
+LIGHT MODE ONLY
+--------------------------------------------------
+
+Apply changes only when Light Mode is active.
+
+Do not affect:
+- Dark navy backgrounds
+- Dark cards
+- Dark text colors
+- Dark borders
+- Dark buttons
+- Dark sidebar
+- Dark mode shadows
+
+Dark Mode must stay exactly the same.
+
+--------------------------------------------------
+LIGHT MODE COLOR SYSTEM
+--------------------------------------------------
+
+Use this Light Mode palette:
+
+Background:
+- App background: #F8FAFC
+- Page background: #F8FAFC
+- Card background: #FFFFFF
+- Secondary card background: #F1F5F9
+- Sidebar background: #FFFFFF
+- Topbar background: #FFFFFF
+
+Text:
+- Primary text: #0F172A
+- Secondary text: #475569
+- Muted text: #64748B
+- Disabled text: #94A3B8
+- Text on blue buttons: #FFFFFF
+
+Borders:
+- Default border: #E2E8F0
+- Strong border: #CBD5E1
+- Focus border: #2563EB
+
+Primary brand:
+- Primary blue: #2563EB
+- Primary blue hover: #1D4ED8
+- Light blue background: #EFF6FF
+- Blue border: #BFDBFE
+- Blue text: #1D4ED8
+
+Success:
+- Green text: #047857
+- Green background: #ECFDF5
+- Green border: #A7F3D0
+
+Warning:
+- Orange/Amber text: #B45309
+- Orange/Amber background: #FFFBEB
+- Orange/Amber border: #FDE68A
+
+Danger:
+- Red text: #B91C1C
+- Red background: #FEF2F2
+- Red border: #FECACA
+
+Neutral badges:
+- Gray text: #334155
+- Gray background: #F1F5F9
+- Gray border: #CBD5E1
+
+--------------------------------------------------
+TEXT VISIBILITY RULES
+--------------------------------------------------
+
+Fix all invisible or low-contrast text in Light Mode.
+
+Rules:
+- Never use white text on white or light backgrounds.
+- Never use very light gray text on light backgrounds.
+- Primary headings should use #0F172A.
+- Body text should use #334155 or #475569.
+- Muted labels should use #64748B.
+- Button text on solid blue should remain white.
+- Text inside cards should be dark and readable.
+- Placeholder text should use #94A3B8.
+- Links should use #2563EB or #1D4ED8.
+
+Check all pages:
+- Student Portal
+- Company Portal
+- Admin Portal
+- Authentication screens
+- Modals
+- Drawers
+- Tables
+- Cards
+- Forms
+- Badges
+- Charts
+- Empty states
+- Error/success states
+
+--------------------------------------------------
+LIGHT MODE COMPONENT FIXES
+--------------------------------------------------
+
+Cards:
+- Background: #FFFFFF
+- Border: #E2E8F0
+- Text: #0F172A / #475569
+- Shadow: soft light shadow
+- Do not use dark card colors in light mode
+
+Sidebar:
+- Background: #FFFFFF
+- Border-right: #E2E8F0
+- Logo text: #2563EB
+- Nav item text: #334155
+- Active nav item background: #EFF6FF
+- Active nav item text: #2563EB
+- Active nav icon: #2563EB
+- Hover nav background: #F1F5F9
+
+Topbar:
+- Background: #FFFFFF
+- Border-bottom: #E2E8F0
+- Search input background: #F8FAFC
+- Search border: #CBD5E1
+- Search text: #0F172A
+- Placeholder: #94A3B8
+- Icons: #475569
+
+Buttons:
+Primary:
+- Background: #2563EB
+- Hover: #1D4ED8
+- Text: #FFFFFF
+- Border: #2563EB
+
+Secondary / outline:
+- Background: #FFFFFF
+- Border: #CBD5E1
+- Text: #0F172A
+- Hover background: #F1F5F9
+- Hover border: #2563EB
+- Hover text: #1D4ED8
+
+Danger:
+- Background: #DC2626
+- Text: #FFFFFF
+- Hover: #B91C1C
+
+Forms:
+- Input background: #FFFFFF
+- Input border: #CBD5E1
+- Input text: #0F172A
+- Placeholder: #94A3B8
+- Focus border: #2563EB
+- Focus ring: light blue
+
+Tables:
+- Header background: #F1F5F9
+- Header text: #334155
+- Row background: #FFFFFF
+- Row hover: #F8FAFC
+- Border: #E2E8F0
+- Main text: #0F172A
+- Secondary text: #64748B
+
+Modals / Drawers:
+- Background: #FFFFFF
+- Border: #E2E8F0
+- Overlay: semi-transparent dark overlay
+- Headings: #0F172A
+- Body text: #475569
+
+Badges:
+Use readable badge combinations:
+- Active / Verified / Published: green text on green background
+- Pending / Review: amber text on amber background
+- Rejected / Error / Suspended: red text on red background
+- Private / Info: blue text on blue background
+- Neutral / Draft / Hidden: gray text on gray background
+
+--------------------------------------------------
+SPECIFIC ISSUES TO FIX
+--------------------------------------------------
+
+Fix these common Light Mode issues:
+
+1. White text appearing on white cards
+Change to dark text.
+
+2. Dark mode navy cards appearing in light mode
+Change to white cards.
+
+3. Blue text on blue buttons with low contrast
+Use white text on blue buttons.
+
+4. Gray labels too light to read
+Use #64748B or darker.
+
+5. Table rows blending into background
+Add borders and subtle row contrast.
+
+6. Badges unreadable
+Use proper light badge backgrounds with darker text.
+
+7. Search input text invisible
+Use dark text and visible border.
+
+8. Modal/drawer text invisible
+Use dark heading/body colors.
+
+9. Sidebar active item unclear
+Use light blue background and blue text/icon.
+
+10. Form placeholders too faint
+Use #94A3B8 but keep actual input text dark.
+
+--------------------------------------------------
+BRAND CONSISTENCY
+--------------------------------------------------
+
+Keep blue as the main brand color in Light Mode.
+
+Use blue consistently for:
+- Primary buttons
+- Active navigation
+- Links
+- Focus states
+- Match score highlights
+- AI recommendation icons
+- Selected tabs
+- Progress indicators
+
+Do not introduce random colors.
+Do not use too many different blues.
+Use one consistent primary blue system.
+
+--------------------------------------------------
+ACCESSIBILITY REQUIREMENT
+--------------------------------------------------
+
+Make sure Light Mode has strong contrast.
+
+All text should be readable:
+- Headings
+- Body text
+- Labels
+- Placeholders
+- Button text
+- Badge text
+- Table text
+- Modal text
+
+Do not leave any text invisible or almost invisible.
+
+--------------------------------------------------
+FINAL CHECK
+--------------------------------------------------
+
+After updating Light Mode, review these pages specifically:
+
+- Portal selection screen
+- Student dashboard
+- Student opportunities
+- Student applications
+- Student feedback
+- Company dashboard
+- Company candidate discovery
+- Company pipeline
+- Company interviews
+- Company insights
+- Admin dashboard
+- Admin assessment questions
+- Admin categories and skills
+- Admin status override
+- Admin feedback moderation
+
+Make Light Mode look polished, readable, and consistent.
+
+Again:
+Do not change Dark Mode.
+Only fix Light Mode colors and contrast.

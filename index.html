@@ -1,0 +1,36 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>AI Internship Matching Platform</title>
+      <meta name="description" content="AI-powered platform matching students with internships via deep profiling, compatibility scoring, feedback, and workflow tracking for smarter placements." />
+      <meta name="robots" content="noindex, nofollow" />
+      <script>
+        (() => {
+          try {
+            const saved = localStorage.getItem('internmatch-theme');
+            const theme = saved === 'light' || saved === 'dark'
+              ? saved
+              : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.classList.toggle('dark', theme === 'dark');
+            document.documentElement.style.colorScheme = theme;
+          } catch {
+            document.documentElement.classList.add('dark');
+          }
+        })();
+      </script>
+      <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
+      
+    </head>
+
+    <body>
+      
+      <div id="root"></div>
+      <script type="module" src="/src/main.tsx"></script>
+      
+    </body>
+  </html>
+  
